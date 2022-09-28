@@ -2,33 +2,25 @@
 let userInput = document.getElementById("userInput");
 let passInput = document.getElementById("passInput");
 
-const username = localStorage.getItem("username");
-const password = localStorage.getItem("password");
+document.querySelector('.validation').addEventListener("click",userDataValid);
+document.getElementById("main").style.display= "none";
 
-
-document.getElementById("main").style.display = "none";
-
-
-document.querySelector('.checker').addEventListener("click",userDataValid);
-
-
-if (username == "user")
+if (localStorage.getItem("namn") == "Sara") {
 document.getElementById("main").style.display = "block";
-
-
-if (userDataValid) {
-    const button = document.createElement("button");
-    button.innerHTML= "Logga ut";
-    main.appendChild(button);
+document.getElementById("login").style.display="none";
+}
+function logOut() { // Skickar användaren till Login igen
+    document.getElementById("main").style.display ="none";
+    document.getElementById("login").style.display="block";
+    localStorage.clear();
 }
 
 function userDataValid () {
-    localStorage.setItem('username', 'user');
-    localStorage.setItem('password', '123');
-
-    if (userInput.value === username && passInput.value === password){
+    if (userInput.value === "Sara" && passInput.value === "qwe123"){
+        localStorage.setItem("namn","Sara");
+        localStorage.setItem("lösenord","qwe123");
         document.getElementById("main").style.display ="block";
-        
+        document.getElementById("login").style.display = "none";
     } else {
         alert("Användarnamnet eller lösenordet är inkorrekt.");
     }

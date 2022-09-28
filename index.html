@@ -9,13 +9,20 @@
 </head>
 <body>
     <div id="main">
+        <button onclick="logOut()" type="button" >Logout</button>
     </div>
-    <p class="checker"></p>
-    <label for="username">Username</label><br>
-    <input type="text" id="userInput" value="" ><br>
-    <label for="password">Password</label><br>
-    <input type="password"id ="passInput" value=""><br>
-    <button onclick="userDataValid()" type="button" id="click">Click</button>
+    <div class="validation"></div>
+    <div id="login">
+    <label for="username">Användarnamn</label>
+    <br>
+    <input type="text" id="userInput" value="" >
+    <br>
+    <label for="password">Lösenord</label>
+    <br>
+    <input type="password"id ="passInput" value="">
+    <br>
+    <button onclick="userDataValid()" type="button" id="click">Login</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
