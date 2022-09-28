@@ -8,28 +8,14 @@
     <title>Logga In</title>
 </head>
 <body>
-    <div class="container">
-        <div class="item">
-        <form>
-        <h2>Login</h2>
-            <div>
-            <label for="anamn">Användarnamn: </label>
-            <br>
-            <input type="text" id="användarnamn" value="">
-            </div>
-            <br>
-            <div>
-            <label for="lord">Lösenord: </label>
-            <br>
-            <input type="password" id="lösenord" value="">
-            </div>
-            <br>
-            <div>
-            <button type="button" id="knapp">Login</button>
-            </div>
-        </form>
-        </div>
+    <div id="main">
     </div>
-    <script src="script.css"></script>
+    <p class="checker"></p>
+    <label for="username">Username</label><br>
+    <input type="text" id="userInput" value="" ><br>
+    <label for="password">Password</label><br>
+    <input type="password"id ="passInput" value=""><br>
+    <button onclick="userDataValid()" type="button" id="click">Click</button>
+    <script src="script.js"></script>
 </body>
 </html>
