@@ -1,37 +1,52 @@
 body {
-    margin: 0;
-    background-color: rgb(125, 162, 229);
+    background-image: url(Vatten.jpg);
 }
 
-.container{
+#login {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    
+    height: 600px;
 }
 
-.item{
+#login > div {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container {
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    height: 300px;
-    width: 250px;
-    background-color: white;
-    color:rgb(59, 59, 59);
-    font-family: monospace;
+    text-align: center;
+    height: 500px;
 }
 
+.container > div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
 
+label {
+    color:black;
+    
+}
 
-#knapp {
-    background-color: rgb(255, 150, 168);
+button {
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
     border-radius: 5px;
-    border-color: pink;
-    color: white;
-    font-family: monospace;
-    font-size: large;
+    border-color: rgba(247, 247, 247, 0.548);
+}
+
+#click {
     display: flex;
+    align-self: center;
+    
 }
