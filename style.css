@@ -5,7 +5,7 @@ body {
     background-attachment: fixed;
 }
 
-#login {
+#login { /* flex-container */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,8 @@ body {
     justify-content: space-evenly;
 }
 
-#login > div {
+
+#login > div { /* flex-item */
     background-color: white;
     height: 200px;
     width: 200px;
@@ -28,10 +29,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
 }
 
-section {
+article { /* flex-item */
     margin-top: 100px;
     background-color:rgb(255, 255, 255);
     border-radius: 10px;
@@ -51,19 +51,16 @@ button {
     font-family: monospace;
     font-size: 17px;
     font-weight: bold;
-}
-
-#click {
     display: flex;
     align-self: center;
     justify-content: center;
     align-items: center;
     width: 140px;
     height: 30px;
-    
 }
 
-@media (max-width: 800px) { #login, section {
+
+@media (max-width: 800px) { #login, section { /* Responsive */
     flex-direction: column;
 }
     
