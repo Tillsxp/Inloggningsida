@@ -3,9 +3,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
 }
 
-#login { /* flex-container */
+#login { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +20,7 @@ body {
 }
 
 
-#login > div { /* flex-item */
+#login > div { 
     background-color: white;
     height: 200px;
     width: 200px;
@@ -31,7 +32,7 @@ body {
     justify-content: space-evenly;
 }
 
-article { /* flex-item */
+article { 
     margin-top: 100px;
     background-color:rgb(255, 255, 255);
     border-radius: 10px;
@@ -60,7 +61,21 @@ button {
 }
 
 
-@media (max-width: 800px) { #login, section { /* Responsive */
+ul {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: row;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 10px;
+}
+
+
+@media (max-width: 800px) { #login, section { 
     flex-direction: column;
 }
     
